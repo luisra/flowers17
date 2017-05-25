@@ -56,7 +56,7 @@ model2 = LinearSVC(C=1, loss='squared_hinge', penalty='l2',multi_class='ovr')
 
 ## Motivation
 
-Before looking into features such as color, shape, and texture for classification purposes, we wanted to make use of an automated feature extraction method to establish a baseline. This would allow us to decide which approach to pursue, automated vs. hands-on, moving forward.
+Before looking into features such as color, shape, and texture for classification purposes, we wanted to make use of an automated feature extraction method to establish a baseline. This would allow us to decide which approach to pursue further, between automated and hands-on, moving forward.
 
 ## Installation
 
