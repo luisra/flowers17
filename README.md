@@ -110,4 +110,4 @@ plt.show();
 
 ## License
 
-MIT
+MIT License
