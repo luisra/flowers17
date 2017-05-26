@@ -71,7 +71,7 @@ def get_data():
     os.chdir(os.path.expanduser("~/Desktop/"))
     print ("generating graph...")
     os.system("python classify_image.py --model_dir ~/Desktop/graph/")
-    print ("graph complete!")
+    print ("graph complete!\n")
 
 get_data()
 
@@ -159,7 +159,7 @@ def extract_features(list_images):
     for i in range(len(list_images)): # Feed image into layer and retrieve features and label
         
         if (i%100 == 0):
-            print("\nProcessing %s..." % (list_images[i]))
+            print("Processing %s..." % (list_images[i]))
             
         preds = sess.run(penultimate_tensor,
                            {'DecodeJpeg:0': images[i]})
