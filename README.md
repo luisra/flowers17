@@ -62,7 +62,7 @@ Before looking into features such as color, shape, and texture for classificatio
 
 ## Installation
 
-Both the flowers.py script and flowers.ipynb notebook perform all aspects of this implementation.
+Both the flowers17.py script and flowers17.ipynb notebook perform all aspects of this implementation.
 
 ## Tests
 
