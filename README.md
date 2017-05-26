@@ -1,6 +1,6 @@
 # Image-Based Flower Classification
 
-Multiclass classifier, based on the [Flowers 17]( http://www.robots.ox.ac.uk/~vgg/data/flowers/17/index.html) Dataset. The data was obtained from the University of Oxford’s Department of Engineering Science.
+Multiclass classifier, based on the [Flowers 17]( http://www.robots.ox.ac.uk/~vgg/data/flowers/17/index.html) Dataset. This data was obtained from the University of Oxford’s Department of Engineering Science.
 
 ## Synopsis
 
