@@ -94,7 +94,7 @@ y = np.repeat(classes, 80)
 images = []
 loc = os.path.expanduser("~/Desktop/jpg")
 
-for filename in os.listdir(loc):
+for filename in sorted(os.listdir(loc)):
     
     img = cv2.imread(os.path.join(loc,filename))    
     
@@ -109,7 +109,7 @@ images = np.asarray(images)
 # Tensor prep
 
 path = os.path.expanduser("~/Desktop/jpg")
-files = os.listdir(path)
+files = sorted(os.listdir(path))
 i = 1
 
 for file in files:    # Rename image files
