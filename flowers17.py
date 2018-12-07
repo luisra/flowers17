@@ -8,7 +8,10 @@ Created on Thu May 25 21:07:30 2017
 
 # Module check/download - those not in Python 3.5.3 #
 
-import pip
+try:
+    from pip import main as pip_main
+except:
+    from pip._internal import main as pip_main
 
 def import_or_install(package):
     try:
@@ -17,7 +20,7 @@ def import_or_install(package):
     
     except ImportError:
         print("\n"+i+": "+"installing...")
-        pip.main(['install', package])
+        pip_main(['install', package])
         print(i+": "+"ok")
 
 modules = ['numpy', 'scipy', 'matplotlib', 'seaborn', 'pandas',
