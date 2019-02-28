@@ -32,9 +32,8 @@ def extract_features(list_images):
     labels = []
     
     create_graph() # Initiate instance of the trained model
-    
-    with tf.Session() as sess: # Retrieve penultimate layer
-        penultimate_tensor = sess.graph.get_tensor_by_name('pool_3:0')
+    sess = tf.Session() # Open session
+    penultimate_tensor = sess.graph.get_tensor_by_name('pool_3:0') # Retrieve penultimate layer
 
     for i in range(len(list_images)): # Feed image into layer and retrieve features and label  
         
@@ -46,6 +45,8 @@ def extract_features(list_images):
         
         features[i,:] = np.squeeze(preds)
         labels.append(re.split("_\d+",list_images[i].split("/")[1])[0])
+    
+    sess.close() # Close session
     
     return features, labels
 ```
